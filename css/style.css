@@ -1,0 +1,143 @@
+* {
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+
+/*MENU*/
+#menu {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    
+}
+
+#menu ul li a {
+    color: #1ac056;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu ul {
+    text-align: right;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin: 30px;
+    
+}
+/*NAGŁÓWEK*/
+#header {
+    position: relative;
+    background-image: url('../img/header-background.jpg');
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+}
+
+#main-header {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    
+}
+.main-header1, .main-header2 {
+    color: white;
+    font-family: "Roboto";
+    margin: 0px;
+}
+
+.main-header1 {
+    font-weight: 100;
+    font-size: 200px;
+}
+.main-header2 {
+    font-weight: 100;
+    font-size: 70px;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 900;
+}
+
+/*sekcja o mnie*/
+
+#about {
+    overflow: hidden;
+    padding: 60px;
+    box-shadow: 10px 5px 5px #888888;
+    
+}
+
+/*wracamy do normalnego flow dokumentu*/
+.about-header {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    text-align: justify;
+}
+
+.zdjecie img {
+    height: 300px;
+    
+}
+
+.zdjecie {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+/*sekcja umiejętności*/
+
+#abilities {
+    padding: 60px;
+    text-align: center;
+
+}
+
+.abilities-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+   
+
+}
+
+#abilities figure {
+    display: inline-block;
+    padding: 30px;
+
+}
+.abilities-content {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+figure img {
+    padding: 20px;
+}
+
+/*sekcja moje portfolio*/
+#portfolio .portfolio-header {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 60px;
+}
