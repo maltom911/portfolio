@@ -1,10 +1,12 @@
 * {
     font-family: 'Lato', sans-serif;
-    color: #291f1a;
+/*    color: #291f1a;*/
     margin: 0;
+    box-sizing: border-box;
 }
-body {
-    margin: 0;
+
+.clear {
+    clear: both;
 }
 
 /*MENU*/
@@ -20,6 +22,12 @@ body {
     color: #1ac056;
     text-decoration: none;
     font-size: 20px;
+    padding: 15px 25px;
+    transition: all 0.5s linear;
+}
+
+#menu ul li a:hover {
+    color: limegreen;
 }
 
 #menu ul {
@@ -28,9 +36,13 @@ body {
 
 #menu ul li {
     display: inline-block;
-    margin: 30px;
-    
+    margin: 30px;    
 }
+
+#menu .toggle, #drop {
+    display: none;
+}
+
 /*NAGŁÓWEK*/
 #header {
     position: relative;
@@ -105,13 +117,13 @@ span {
 
 /*sekcja umiejętności*/
 
-#abilities {
+#skills {
     padding: 60px;
     text-align: center;
 
 }
 
-.abilities-header {
+.skills-header {
     text-align: center;
     font-size: 30px;
     font-weight: 100;
@@ -119,12 +131,12 @@ span {
 
 }
 
-#abilities figure {
+#skills figure {
     display: inline-block;
     padding: 30px;
 
 }
-.abilities-content {
+.skills-content {
     display: block;
     text-align: center;
     padding: 20px;
@@ -140,4 +152,155 @@ figure img {
     font-weight: 100;
     text-align: center;
     margin-bottom: 60px;
+}
+/*backgroundimage trzy ikonki*/
+
+#image1 {
+    background-image:url('../img/portfolio1.jpg');
+}
+
+#image2 {
+    background-image:url('../img/portfolio2.jpg');
+    
+}
+#image3 {
+    background-image:url(../img/portfolio3.jpg);
+    
+}
+.image {
+    height: 350px;
+    display: inline-block;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfolio {
+    padding: 50px 80px;
+}
+
+/*hover, tranzycja*/
+
+#portfolio .image .mask {
+    background-color: rgba(42, 61, 79, 0.8);
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    padding: 10px;
+}
+
+#portfolio .image:hover .mask {
+    opacity: 1;
+}
+
+#portfolio .image .mask .border {
+    border: 1px solid #FFFFFF;
+    height: 100%;    
+    position: relative;
+}
+
+#portfolio .image .mask .border .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#portfolio .image .mask .border p {
+    text-align: center;
+    color: #FFFFFF;
+}
+/*sekcja contact*/
+
+#contact  {
+    background-color: #213B50;
+    color: #FFFFFF;
+    padding: 60px 30px;
+}
+
+#contact .contact-data {
+    width: 50%;
+    float: left;
+}
+
+#contact .contact-data h5 {
+    text-align: left;
+    font-size: 38px;
+}
+
+#contact .contact-data address {
+    font-style: normal;
+    margin: 72px 0;
+    line-height: 25px;
+}
+
+#contact .contact-data address a {
+    color: #1AC056;
+}
+
+#contact .contact-data .contact-social-icons a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    line-height: 38px;
+    color: #FFFFFF;
+    font-size: 22px;
+    transition: all 0.4s;
+}
+
+#contact .contact-data .contact-social-icons a:hover {
+    color: #213B50;
+    border: 1px solid #213B50;
+    background-color: #FFFFFF;
+}
+
+#contact #form {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-top: 100px;
+}
+
+#contact #form form input,
+#contact #form form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2B4A64;
+    border: #2B4A64 0px;
+    color: #FFFFFF;
+}
+
+#contact #form form input:focus,
+#contact #form form textarea:focus {
+    background-color: #426684;
+}
+
+#contact #form form input[type="submit"] {
+    background-color: #1AC056;
+    color: #FFFFFF;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    float: right;
+    border: 1px solid #1AC056;
+    transition: all 0.4s;
+}
+
+#contact #form form input[type="submit"]:hover {
+    background-color: #FFFFFF;
+    color: #1AC056;
+}
+
+/* FOOTER */
+footer {
+    background-color: #142634;
+    color: #FFFFFF;
+    padding: 0 80px;
+}
+
+footer p {
+    margin: 0;
 }

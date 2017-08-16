@@ -4,23 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    
+    <!-- czcionki szukamy na fonts.google - podpinamy jako linki w html lub import w css -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!-- mozna tez sciagnac cala czczionke lokalnie do projektu, wtedy w css MUSIMY ustawic regule @font-face -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
 </head>
+
 <body>
     <nav id="menu">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
         <ul>
             <li class="menu-item">
-                <a href="about">o mnie</a></li>
+                <a href="#about">o mnie</a></li>
             <li class="menu-item">
-                <a href="skills">umiejętności</a></li>
+                <a href="#skills">umiejętności</a></li>
             <li class="menu-item">
-                <a href="portfolio">portfolio</a></li>
+                <a href="#portfolio">portfolio</a></li>
             <li class="menu-item">
-                <a href="kontakt>">kontakt</a></li>
+                <a href="#contact">kontakt</a></li>
         </ul>
     </nav>
+
     <header id="header">
         <div id="main-header">
             <h1 class="main-header1">Tomasz <span>Malski</span></h1><br>
@@ -35,66 +48,86 @@
             <img src="img/zdjecie.jpg">
         </figure>
     </section>
-      
-       <section id="abilities">
-            <h3 class="abilities-header">Moje <span>umiejętności</span></h3>
-            <p2 class="abilities-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet eveniet, asperiores quasi facilis earum suscipit harum at itaque sint architecto voluptatum rem explicabo, cumque inventore officiis modi enim dignissimos? </p2>
-            <figure class="html">
-                <img src="icons/html5.png">
-                <figcaption>HTML5</figcaption>
-            </figure>
-            <figure class="css3">
-                <img src="icons/css3.png">
-                <figcaption>CSS3</figcaption>
-            </figure>
-            <figure class="js">
-                <img src="icons/js.png">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure class="jquery">
-                <img src="icons/jquery.png">
-                <figcaption>jQuery</figcaption>
-            </figure>
-        </section>
+
+    <section id="skills">
+        <h3 class="skills-header">Moje <span>umiejętności</span></h3>
+        <p2 class="skills-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet eveniet, asperiores quasi facilis earum suscipit harum at itaque sint architecto voluptatum rem explicabo, cumque inventore officiis modi enim dignissimos? </p2>
+        <figure class="html">
+            <img src="icons/html5.png">
+            <figcaption>HTML5</figcaption>
+        </figure>
+        <figure class="css3">
+            <img src="icons/css3.png">
+            <figcaption>CSS3</figcaption>
+        </figure>
+        <figure class="js">
+            <img src="icons/js.png">
+            <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure class="jquery">
+            <img src="icons/jquery.png">
+            <figcaption>jQuery</figcaption>
+        </figure>
+    </section>
+
     <section id="portfolio">
         <h4 class="portfolio-header">Moje <span>portfolio</span></h4>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <div class="image" id="image1">
+            <div class="mask">
+                <div class="border">
+                    <div class="content"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cumque veniam sit non debitis, explicabo, alias id obcaecati, eum excepturi laboriosam numquam saepe deserunt, consectetur! Quisquam quibusdam numquam vitae cum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image" id="image2">
+            <div class="mask">
+                <div class="border">
+                    <div class="content"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cumque veniam sit non debitis, explicabo, alias id obcaecati, eum excepturi laboriosam numquam saepe deserunt, consectetur! Quisquam quibusdam numquam vitae cum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image" id="image3">
+            <div class="mask">
+                <div class="border">
+                    <div class="content"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cumque veniam sit non debitis, explicabo, alias id obcaecati, eum excepturi laboriosam numquam saepe deserunt, consectetur! Quisquam quibusdam numquam vitae cum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
     </section>
-            
-            
-            
-            
-            
-            
-            
+
+    <section id="contact">
+        <div class="contact-data">
+            <h5 >Tomasz <span>Malski</span></h5>
+            <address>
+                ul.Kazimierza Wielkiego 116/4<br> 
+                30-082 Kraków<br> 
+                tel: 694 417 326<br> 
+                email: <a href="mailto:malski.tomasz@gmail.com">malski.tomasz@gmail.com</a>
+            </address>
+            <div class="contact-social-icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div id="form">
+            <form action="">
+                <input type="text" name="name" placeholder="Imię i nazwisko">
+                <input type="email" name="email" placeholder="Adres e-mail">
+                <textarea name="message" placeholder="Wiadomość"></textarea>
+                <input type="submit" value="WYŚLIJ">
+            </form>
+        </div>
+        <div class="clear"></div>
     </section>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
+    <footer>
+        <p>Copyright &copy; Tomasz Malski</p>
+    </footer>
 </body>
-
 </html>
